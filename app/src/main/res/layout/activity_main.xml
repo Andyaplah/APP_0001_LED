@@ -8,25 +8,34 @@
     tools:context=".MainActivity">
 
    <Button
-       android:text="ALL ON"
+       android:id="@+id/btn"
+       android:text="ALL ON/OFF"
        android:onClick="clickall"
        android:layout_width="match_parent"
        android:layout_height="wrap_content" />
 
     <CheckBox
+        android:onClick="onCheckboxClicked"
+        android:id="@+id/led1"
         android:text="led1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <CheckBox
+        android:onClick="onCheckboxClicked"
+        android:id="@+id/led2"
         android:text="led2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <CheckBox
-        android:text="led2"
+        android:onClick="onCheckboxClicked"
+        android:id="@+id/led3"
+        android:text="led3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <CheckBox
-        android:text="led2"
+        android:onClick="onCheckboxClicked"
+        android:id="@+id/led4"
+        android:text="led4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
