@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
-
+import com.andy.hardlibrary.*;
 public class MainActivity extends AppCompatActivity {
 
     private boolean ledon = false;
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickall(View view) {
+        HardControl hardControl = new HardControl();
         ledon = !ledon;
         if(ledon){
             mBtn.setText("ALL OFF");
